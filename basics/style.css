@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+
+h1, h2 {
+    color: rgb(15, 66, 90);
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.main-text {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.author-text {
+    font-size: 22px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.container {
+    margin: 20px auto 0 auto;
+    width: 1140px;
+}
+
+.blog-post {
+    width: 75%;
+    float: left;
+    padding-right: 30px;
+    position: relative;
+}
+
+.other-posts {
+    width: 25%;
+    float: left;
+}
+
+.author-box {
+    border-top: 3px solid rgb(124, 124, 124);
+    padding-top: 20px;
+}
+
+.other {
+    margin-bottom: 40px;
+}
+
+/* selects image inside class author-box*/
+.author-box img {
+    height: 100px;
+    width: 100px;
+    /* 50% radius is a circle */
+    border-radius: 50%;
+    float: left;
+}
+
+.blog-post img {
+    height: 150px;
+    width: auto;
+}
+
+/* when using absolute positioning the parent element needs to be set to relative position */
+.date {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
