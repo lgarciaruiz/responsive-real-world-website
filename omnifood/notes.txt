@@ -1,0 +1,18 @@
+Vendors folder will contain resources that were created by others
+
+Resources folder will contain resources created by me
+
+Normalize css (found in internet) is css that rests all styles making it easier to get same results in all broswers
+
+When using webfonts or google fonts don't use all fonts as it will slow down the page. Use only what you need.
+
+
+*********** INGREDIENTS FOR RESPONSIVE WEB DESIGN ************
+1. fluid grid: all layout elements are sized in relative uints, such as percentages, instead of absolute units like pixels
+
+2. flexible images: sized with percentages
+
+3. media queries: specify different css style rules for different broswer widths
+
+
+Everything should be sized relative including font-sizes
