@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ominfood the fake page I worked on in; keep this text less than 160 characters">
     
     <!-- Normalize CSS on all browsers -->
     <link rel="stylesheet" href="vendors/css/normalize.css" type="text/css">
@@ -19,9 +20,19 @@
     <!-- querys file -->
     <link rel="stylesheet" href="resources/css/querys.css" type="text/css">
 
+    <!-- Animations css -->
+    <link rel="stylesheet" href="vendors/css/animate.css"/>
+
     <!-- fonts link -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+
     <title>Omnifood</title>
+        
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicon/favicon-16x16.png">
+    <link rel="manifest" href="resources/favicon/site.webmanifest">
+
 </head>
 <body>
 
@@ -30,24 +41,26 @@
         <nav>
             <div class="row">
                 <img src="resources/css/img/logo-white.png" alt="Ominfood Logo" class="logo">
+                <img src="resources/css/img/logo.png" alt="Ominfood Logo" class="logo-black">
 
-                <ul class="main-nav">
-                    <li><a href="#">Delivery</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">Our cities</a></li>
-                    <li><a href="#">Sign up</a></li>
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#features">Delivery</a></li>
+                    <li><a href="#works">How it works</a></li>
+                    <li><a href="#cities">Our cities</a></li>
+                    <li><a href="#plans">Sign up</a></li>
                 </ul>
+                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
             </div>
         </nav>
         <div class="hero-text-box">
             <h1>Goodbye junk food. <br> 
                 Hello super healthy meals!</h1>
-            <a class="btn btn-full" href="#">I'm Hungry</a>
-            <a class="btn btn-ghost" href="#">Show Me More</a>
+            <a class="btn btn-full js--scroll-to-plan" href="#">I'm Hungry</a>
+            <a class="btn btn-ghost js--scroll-to-start" href="#">Show Me More</a>
         </div>
     </header>
 
-    <section class="section-features">
+    <section class="section-features js--section-features" id="features">
         <div class="row">
             <h2>Get food fast &mdash; not fast food.</h2>
             <p class="long-copy">
@@ -55,7 +68,7 @@
             </p>
         </div>
 
-        <div class="row">
+        <div class="row js--wp-1">
             <div class="col span-1-of-4 box">
                 <i class="ion-ios-infinite-outline icon-big"></i>
                 <h3>Up to 365 days/year</h3>
@@ -137,14 +150,14 @@
 
         </section>
 
-        <section class="section-steps">
+        <section class="section-steps"  id="works">
 
             <div class="row">
                 <h2>How it works &mdash; Simple as 1, 2, 3</h2>
             </div>
 
             <div class="row">
-                <div class="col span-1-of-2 steps-box">
+                <div class="col span-1-of-2 steps-box js--wp-2">
                     <img src="resources/css/img/app-iPhone.png" alt="Ominfood App iPhone" class="app-screen">
                 </div>
                 <div class="col span-1-of-2 steps-box">
@@ -168,7 +181,7 @@
 
         </section>
 
-        <section class="section-cities">
+        <section class="section-cities js--wp-3" id="cities">
             <div class="row">
                 <h2>We're currently in these cities</h2>
             </div>
@@ -263,12 +276,12 @@
 
         </section>
 
-        <section class="section-plans">
+        <section class="section-plans js--section-plans" id="plans">
             <div class="row">
                 <h2>Start Eating Healthy, Today</h2>
             </div>
             <div class="row">
-                <div class="col span-1-of-3">
+                <div class="col span-1-of-3 js--wp-4">
                     <div class="plan-box">
                         <div>
                             <h3>Premium</h3>
@@ -444,10 +457,14 @@
             </div>
         </footer>
 
-</body>
-
+        
 <script src="https://www.jsdelivr.com/package/npm/respond.min.js"></script>
 <script src="https://www.jsdelivr.com/package/npm/html5shiv.min.js"></script>
-<script src="https://www.jsdelivr.com/package/npm/html5shiv.min.js"></script>
 <script src="https://www.jsdelivr.com/package/npm/selectivizr.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="vendors/js/jquery.waypoints.min.js"></script>
+<script src="resources/js/script.js"></script>
+
+</body>
+
 </html>

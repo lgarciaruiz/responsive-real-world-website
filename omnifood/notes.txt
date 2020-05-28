@@ -16,3 +16,20 @@ When using webfonts or google fonts don't use all fonts as it will slow down the
 
 
 Everything should be sized relative including font-sizes
+
+
+******* JQuery ******
+Jquery is started in a document with the following code.
+$(document).ready(function(){
+
+})
+
+The $ is used when writing jquery; i believe it denotes the begning of jquery code
+
+Selecting an element with jquery is done as follows $('.classname idname element name')
+
+
+******* Launching a website *****
+1. choose domain
+2. buy web hostin
+3. upload our website
